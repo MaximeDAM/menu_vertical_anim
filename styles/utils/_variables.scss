@@ -1,0 +1,66 @@
+//------------------Variables ---------------------
+
+//------------------General---------------------
+//---------Background---------
+$bg-primary: #fdfdfd;
+$bg-secondary: transparent;
+$bg-tertiary: #cccccc;
+$bg-input: #fdfdfd;
+$bg-submit: #fdfdfd;
+$bg-active:#cccccc;
+
+$Border-color: #7f7e7e;
+//---------Color---------
+$color-primary: #000000;
+$color-secondary: #cccccc;
+$color-tertiary: #e6e6e6;
+$color-contrast: #000000;
+$color-accent: #fff;
+$color-valid: #FFF0C0;
+
+//---------FontFamily---------
+$font-primary: (
+  black: "RalewayBlack",
+  bold: "RalewayBold",
+  regular: "RalewayRegular",
+  medium: "RalewayMedium",
+  light: "RalewayLight",
+  thin: "RalewayThin",
+);
+$font-secondary: "CambayRegular";
+$font-default: sans-serif;
+//---------FontSize---------
+$font-size: (
+  big: clamp(2.5rem, 7.3vw, 8rem),
+  h1: clamp(3.5rem, 8.1vw, 5rem),
+  h2: clamp(3.5rem, 2.6vw, 5rem),
+  medium: clamp(2.5rem, 3.4vh, 3rem),
+  middle: clamp(2rem, 3vh, 2.5rem),
+  normal: clamp(1.4rem, 1.8vh, 1.6rem),
+);
+
+$font-size-icons: clamp(1.6rem, 2.3vh, 2rem) ; 
+
+//------------------Menu Burger---------------------
+$backgroundColorMenu: rgba(#000, 70%);
+//------------------Header---------------------
+//------------------Article ---------------------
+$colorArticle: #fff;
+$backgroundColorArticle: rgba(#000, 80%);
+
+//------------------Aside ---------------------
+$colorAside: #fff;
+$backgroundColorAside: rgba(#000, 77%);
+$colorArrow: #fff;
+
+//------------------Footer---------------------
+$backgroundColorFoot: rgba(#000, 90%);
+
+//------------------Responsive---------------------
+
+$breakpoints: (
+  desktop: 1200px,
+  landtop: 1024px,
+  tablet: 621px,
+  phone: 480px,
+);

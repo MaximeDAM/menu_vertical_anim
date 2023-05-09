@@ -1,0 +1,19 @@
+{
+    "name": "maxime/model",
+    "description": "animation up and down of vertical navbar",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/",
+            "view\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MaximeDAM",
+            "email": "m.dalleave@codeur.online"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

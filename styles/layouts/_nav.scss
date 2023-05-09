@@ -1,0 +1,152 @@
+//-------------------Nav----------------------
+.nav {
+  width: 50%;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 7rem 0 0 0;
+    column-gap: 10rem;
+    &_animations {
+      text-align: center;
+      & a {
+        font-size: 1.4rem;
+      }
+    }
+    &__return {
+      align-self: flex-end;
+    }
+  }
+  #return {
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    background-color: #acc3d6;
+    border-radius: 1.4rem;
+  }
+  // ---------------------Item Up------------------------------
+  @for $i from 1 through 12 {
+    .active-item-up-#{$i}00 {
+      animation: fadeInUpNav-#{$i}00 1s ease-in-out forwards;
+    }
+  }
+  // ---------------------Item Up Opac------------------------------
+  @for $i from 1 through 12 {
+    .active-item-up-#{$i}00-opac0 {
+      animation: fadeInUpNav-#{$i}00-opac0 1s ease-in-out forwards;
+    }
+  }
+  // ---------------------Item Up Reverse------------------------------
+  @for $i from 1 through 12 {
+    .active-item-reverse-up-#{$i}00 {
+      animation: fadeInUpNav-reverse-#{$i}00 1s ease-in-out forwards reverse;
+    }
+  }
+  // ---------------------Item Up Opac Reverse------------------------------
+  @for $i from 1 through 12 {
+    .active-item-reverse-up-#{$i}00-opac0 {
+      animation: fadeInUpNav-reverse-#{$i}00-opac0
+        1s
+        ease-in-out
+        forwards
+        reverse;
+    }
+  }
+  // ---------------------Item Down Opac------------------------------
+  @for $i from 1 through 12 {
+    .active-item-down-#{$i}00-opac0 {
+      animation: fadeInDownNav-#{$i}00-opac0 1s ease-in-out forwards;
+    }
+  }
+  // ---------------------Item Down Opac Reverse------------------------------
+  @for $i from 1 through 12 {
+    .active-item-reverse-down-#{$i}00-opac0 {
+      animation: fadeInDownNav-reverse-#{$i}00-opac0
+        1s
+        ease-in-out
+        forwards
+        reverse;
+    }
+  }
+  //-------------------ANIMATIONS KEYFRAMES-------------------
+  //-------------------FadeInUp-------------------
+  @for $i from 1 through 12 {
+    @keyframes fadeInUpNav-#{$i}00 {
+      0% {
+      }
+      50% {
+        transform: translateY(-$i * 100%);
+      }
+      100% {
+        transform: translateY(-$i * 100%);
+      }
+    }
+  }
+  @for $i from 1 through 12 {
+    @keyframes fadeInUpNav-#{$i}00-opac0 {
+      0% {
+      }
+      50% {
+        transform: translateY(-$i * 100%);
+      }
+      100% {
+        transform: translateY(-$i * 100%);
+        opacity: 0;
+      }
+    }
+  }
+  //-------------------FadeInDown-------------------
+  @for $i from 1 through 12 {
+    @keyframes fadeInDownNav-#{$i}00-opac0 {
+      0% {
+      }
+      50% {
+        transform: translateY($i * 100%);
+      }
+      100% {
+        transform: translateY($i * 100%);
+        opacity: 0;
+      }
+    }
+  }
+  //-------------------Reverse UP-------------------
+  @for $i from 1 through 12 {
+    @keyframes fadeInUpNav-reverse-#{$i}00 {
+      0% {
+      }
+      50% {
+        transform: translateY(-$i * 100%);
+      }
+      100% {
+        transform: translateY(-$i * 100%);
+      }
+    }
+  }
+  @for $i from 1 through 12 {
+    @keyframes fadeInUpNav-reverse-#{$i}00-opac0 {
+      0% {
+      }
+      50% {
+        transform: translateY(-$i * 100%);
+      }
+      100% {
+        transform: translateY(-$i * 100%);
+        opacity: 0;
+      }
+    }
+  }
+
+  //-------------------Reverse DOWN-------------------
+  @for $i from 1 through 12 {
+    @keyframes fadeInDownNav-reverse-#{$i}00-opac0 {
+      0% {
+      }
+      50% {
+        transform: translateY($i * 100%);
+      }
+      100% {
+        transform: translateY($i * 100%);
+        opacity: 0;
+      }
+    }
+  }
+}
